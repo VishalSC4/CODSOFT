@@ -59,6 +59,8 @@ public class ATM_System {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         BankAccount userAccount = new BankAccount(1000); // Initial balance of $1000
+       
+        
         ATM atm = new ATM(userAccount);
 
         while (true) {
@@ -86,7 +88,7 @@ public class ATM_System {
                     atm.checkBalance();
                     break;
                 case 4:
-                    System.out.println("Thank you for using the ATM. Goodbye!");
+                    System.out.println("Thank you for using the ATM.");
                     scanner.close();
                     return;
                 default:
